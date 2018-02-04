@@ -22,7 +22,7 @@ For $i = 1 To $CommandLine[0]
    EndIf
 
    ; D:\Desktop\qpdf\qpdf.exe --decrypt "D:\OUTTY_DOCUMENT\Zotero\storage\MG77PZEI\fb180204160226.pdf" "D:\Desktop\qpdf\qpdf.exe fb180204160226a.pdf"
-   Local $qpdf_command = $qpdf & " --decrypt " & $file & " " & $tmp
+   Local $qpdf_command = $qpdf & ' --decrypt "' & $file & '" "' & $tmp & '"'
    ;MsgBox($MB_SYSTEMMODAL, "", $qpdf_command)
 
    RunWait($qpdf_command)
